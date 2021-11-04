@@ -6,7 +6,7 @@
 /*   By: mbarylak <mbarylak@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 14:18:43 by mbarylak          #+#    #+#             */
-/*   Updated: 2021/11/04 17:35:40 by mbarylak         ###   ########.fr       */
+/*   Updated: 2021/11/04 19:41:17 by mbarylak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,14 +60,4 @@ int	ft_printf(const char *s, ...)
 	}
 	va_end(args);
 	return (count);
-}
-
-int	main(void)
-{
-	void	*ptr;
-
-	ptr = (void *) "g";
-	ft_printf(" Num1: %d\n", ft_printf("Fake: %p %\n", ptr));
-	write(1, "\n", 1);
-	printf(" Num2: %d\n", printf("Orig: %p %\n", ptr));
 }
