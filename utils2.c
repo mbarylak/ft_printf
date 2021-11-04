@@ -6,7 +6,7 @@
 /*   By: mbarylak <mbarylak@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:18:58 by mbarylak          #+#    #+#             */
-/*   Updated: 2021/11/04 17:13:17 by mbarylak         ###   ########.fr       */
+/*   Updated: 2021/11/04 20:49:01 by mbarylak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,4 +60,19 @@ int	ft_ptohex(void *ptr)
 	}
 	free(num);
 	return (count);
+}
+
+
+int	ft_putstr2(char *s)
+{
+	int	i;
+
+	i = 0;
+	if (!s)
+		return (write(1, "(null)", 6));
+	while (s[i])
+		write(1, &s[i++], 1);
+	if (*s)
+		free(s);
+	return (i);
 }

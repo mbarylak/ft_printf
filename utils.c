@@ -6,7 +6,7 @@
 /*   By: mbarylak <mbarylak@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 14:17:11 by mbarylak          #+#    #+#             */
-/*   Updated: 2021/11/04 16:18:49 by mbarylak         ###   ########.fr       */
+/*   Updated: 2021/11/04 20:46:42 by mbarylak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int	ft_putstr(char *s)
 	int	i;
 
 	i = 0;
+	if (!s)
+		return (write(1, "(null)", 6));
 	while (s[i])
 		write(1, &s[i++], 1);
 	return (i);

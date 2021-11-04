@@ -6,7 +6,7 @@
 /*   By: mbarylak <mbarylak@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 14:17:07 by mbarylak          #+#    #+#             */
-/*   Updated: 2021/11/04 17:30:39 by mbarylak         ###   ########.fr       */
+/*   Updated: 2021/11/04 20:47:54 by mbarylak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 
 int		ft_putchar(char c);
 int		ft_putstr(char *s);
+int		ft_putstr2(char *s);
 char	*ft_itoa(int n);
 char	*ft_utoa(unsigned int n);
 char	*ft_itohex(unsigned long int n, char *base);

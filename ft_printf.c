@@ -6,7 +6,7 @@
 /*   By: mbarylak <mbarylak@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 14:18:43 by mbarylak          #+#    #+#             */
-/*   Updated: 2021/11/04 19:41:17 by mbarylak         ###   ########.fr       */
+/*   Updated: 2021/11/04 20:48:58 by mbarylak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,14 @@ static int	do_ur_thing(char c, va_list args)
 	else if (c == 'p')
 		return (ft_ptohex(va_arg(args, void *)));
 	else if (c == 'i' || c == 'd')
-		return (ft_putstr(ft_itoa(va_arg(args, int))));
+		return (ft_putstr2(ft_itoa(va_arg(args, int))));
 	else if (c == 'u')
-		return (ft_putstr(ft_utoa(va_arg(args, unsigned int))));
+		return (ft_putstr2(ft_utoa(va_arg(args, unsigned int))));
 	else if (c == 'x')
-		return (ft_putstr(ft_itohex(va_arg(args, unsigned int), \
+		return (ft_putstr2(ft_itohex(va_arg(args, unsigned int), \
 						"0123456789abcdef")));
 	else if (c == 'X')
-		return (ft_putstr(ft_itohex(va_arg(args, unsigned int), \
+		return (ft_putstr2(ft_itohex(va_arg(args, unsigned int), \
 						"0123456789ABCDEF")));
 	else if (c == '%')
 		return (ft_putchar('%'));

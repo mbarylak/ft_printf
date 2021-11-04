@@ -6,7 +6,7 @@
 #    By: mbarylak <mbarylak@student.42madrid>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:32:51 by mbarylak          #+#    #+#              #
-#    Updated: 2021/11/04 19:41:53 by mbarylak         ###   ########.fr        #
+#    Updated: 2021/11/04 19:58:50 by mbarylak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ INCLUDE = ft_printf.h
 
 CC = gcc
 
-CFLAGS = -Wall -Werror -Wextra -g3 -fsanitize=address
+CFLAGS = -Wall -Werror -Wextra
 
 NAME = libftprintf.a
 
